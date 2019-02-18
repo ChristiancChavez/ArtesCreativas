@@ -1,0 +1,16 @@
+.social {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialIcon {
+    width: 20px;
+    filter: grayscale(100%);
+    cursor: pointer;
+    margin: 0% 15px;
+}
+.socialIcon:hover {
+    filter: grayscale(0%);
+}

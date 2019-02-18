@@ -1,0 +1,38 @@
+.categories {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 18% 6% 0% 6%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../assets/images/back1.jpg');
+}
+
+.category {
+    position: relative;
+    margin-bottom: 30%;
+}
+.image {
+    width: 220px;
+    height: 290px;
+    border-radius: 4px;
+}
+
+.label {
+    position: absolute;
+    bottom: -5%;
+    right: 13%;
+    width: 160px;
+    padding: 4% 0%;
+    background: rgb(240, 86, 66);
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+.label:hover {
+    background: white;
+    color: rgb(240, 86, 66);
+}
