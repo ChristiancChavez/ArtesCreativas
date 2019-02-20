@@ -1,14 +1,15 @@
 import React from 'react';
 import Styles from'./social.module.scss';
-import facebook from '../../assets/images/facebook.png';
-import instagram from '../../assets/images/instagram.png';
-import whatsapp from '../../assets/images/whatsapp.png';
+import { requestImagesSocial } from '../../Helpers/requestImagesSocial';
 
-const social = () => (
-    <div className={Styles.social}>
-        <img className={Styles.socialIcon} src={facebook} alt="facebook"/>
-        <img className={Styles.socialIcon} src={instagram} alt="instagram"/>
-        <img className={Styles.socialIcon} src={whatsapp} alt="whatsapp"/>
-    </div>
-)
+const social = ({ socialIconApp }) => {
+    const images = requestImagesSocial.map(item => 
+        <img className={`${Styles.socialIcon} ${Styles[socialIconApp]}`} src={require(`../../assets/images/${item.image}.png`)} alt={item.image}/>
+    )
+    return (
+        <div className={Styles.social}>
+            {images}
+        </div>
+    )
+}
 export default social;

@@ -1,0 +1,24 @@
+.optionsNav {
+    padding: 4% 6%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    background: #F05742;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    position: fixed;
+    text-align: center;
+}
+.close {
+    width: 20px;
+    position: absolute;
+    top: 8%;
+}
+
+.option:hover {
+    color: white;
+    border-bottom: 1px solid white;
+}

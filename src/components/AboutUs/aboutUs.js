@@ -7,7 +7,7 @@ const aboutUs = () => (
             con excelentes precios; además te brindamos un excelente servicio de asesoria e instalación con 
             seguimiento continuo de tu satisfacción!
         </p>
-        <button className={styles.aboutButton}>Compruebalo Aquí</button>
+        <span className={styles.aboutButton}>Contáctanos y recibe la mejor Asesoría</span>
     </div>
 )
 export default aboutUs;
