@@ -1,26 +1,45 @@
 .background {
+    background: transparent;
+    margin-top: 4%;
     display: flex;
-    flex-flow: column;
-    justify-content: space-around;
     align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    
+}
+.sales {
+    width: 100%;
+    background: white;
+    border-radius: 4px;
+    margin: 3.5% 0% 3% 0%;
     position: relative;
+    padding-bottom: 3%;
 }
 .name {
     font-size: 14px;
     font-weight: bold;
-    color: white;
+    color: #F05742;
+    
+}
+.line {
+    width: 60px;
+    height: 1px;
+    background: black;
 }
 .title {
     color: black;
-    border-bottom: 1px solid black;
     font-weight: bold;
     font-size: 14px;
-    width: 50%;
-    padding-bottom: 3%;
     cursor: pointer;
+    margin-bottom: 2%;
+}
+.title:hover {
+    color: white;
 }
 .img {
-    width: 60px;
+    width: 240px;
+    height: 130px;
     border-radius: 4px;
 }
 .price {
@@ -30,4 +49,8 @@
     padding: 5px;
     background: white;
     border-radius: 4px;
+    position: absolute;
+    bottom: 0%;
+    right: 40%;
+    border: 1px solid white;
 }

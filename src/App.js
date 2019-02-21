@@ -14,11 +14,12 @@ class App extends Component {
     const { socialIconApp } = this.state;
     return (
       <div className={styles.app}>
+      <OptionsNav />
         <Header />
         <Categories />
         <AboutUs />
         <Social socialIconApp={socialIconApp} />
-        <OptionsNav />
+        
       </div>
     );
   }

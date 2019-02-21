@@ -1,37 +1,49 @@
-.opinion {
+.item {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     background: white;
     border-radius: 4px;
-    padding: 2%;
+    margin-top: 3%;
 }
-.item {
+.opinion {
     background: transparent;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 4px;
+}
+.line {
+    width: 60px;
+    height: 1px;
+    background: black;
 }
 .title {
     color: black;
-    border-bottom: 1px solid black;
     font-weight: bold;
     font-size: 14px;
-    width: 50%;
-    padding-bottom: 3%;
     cursor: pointer;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
+}
+.title:hover {
+    color: white;
 }
 .text {
     font-size: 12px;
     color: black;
+    margin: 1%;
 }
 .description {
-    font-size: 13px;
+    font-size: 12px;
     color: #F05742;
     font-weight: bold;
     font-style: italic;
 }
 .image {
-    width: 70%;
-    margin-top: 5%;
+    width: 65%;
     border-radius: 4px;
+}
+.close {
+    width: 25px;
+    margin-bottom: 10%;
 }

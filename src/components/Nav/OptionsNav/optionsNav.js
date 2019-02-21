@@ -1,17 +1,18 @@
 import React from 'react';
 import Opinion from './Opinion/opinion';
 import Sales from './Sales/sales';
-import close from '../../../assets/images/close.png';
+import Social from '../../Social/social';
+
 import styles from './optionsNav.module.scss';
 
 
 const optionsNav = () => (
     <div className={styles.optionsNav}>
-        <img className={styles.close} src={close} alt="close"/>
-        
+    <div className={styles.main}>
         <Opinion />
-        
         <Sales />
+        <Social />
+    </div>
     </div>
 )
 export default optionsNav;
