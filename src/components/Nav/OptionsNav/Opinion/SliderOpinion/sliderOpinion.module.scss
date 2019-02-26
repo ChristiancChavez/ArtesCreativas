@@ -1,0 +1,26 @@
+.text {
+    font-size: 12px;
+    color: black;
+    margin: 1%;
+}
+.description {
+    font-size: 12px;
+    color: #F05742;
+    font-weight: bold;
+    font-style: italic;
+    margin: 1% 0;
+}
+.image {
+    width: 78%;
+    height: 130px;
+    border-radius: 4px;
+}
+.item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    border-radius: 4px;
+    margin-top: 3%;
+    padding: 1%;
+}

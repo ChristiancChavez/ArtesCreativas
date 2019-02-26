@@ -9,12 +9,13 @@ import styles from './app.module.scss';
 class App extends Component {
   state = {
     socialIconApp : 'socialIconApp',
+    view: 0,
   }
   render() {
-    const { socialIconApp } = this.state;
+    const { socialIconApp, view } = this.state;
     return (
       <div className={styles.app}>
-      <OptionsNav />
+      <OptionsNav view={view} />
         <Header />
         <Categories />
         <AboutUs />

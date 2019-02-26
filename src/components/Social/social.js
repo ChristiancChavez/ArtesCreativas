@@ -4,7 +4,7 @@ import { requestImagesSocial } from '../../Helpers/requestImagesSocial';
 
 const social = ({ socialIconApp }) => {
     const images = requestImagesSocial.map(item => 
-        <img className={`${Styles.socialIcon} ${Styles[socialIconApp]}`} src={require(`../../assets/images/${item.image}.png`)} alt={item.image}/>
+        <img className={`${Styles.socialIcon} ${Styles[socialIconApp]}`} src={require(`../../assets/images/${item.image}.png`)} alt={item.image} key={item.image}/>
     )
     return (
         <div className={Styles.social}>

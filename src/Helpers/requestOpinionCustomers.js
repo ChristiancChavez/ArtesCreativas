@@ -20,6 +20,6 @@ export const requestOpinionCustomer = [
     {
         user:'Juan Felipe', 
         product:'Cuadro en vidrio personalizado', 
-        photo:'dios de la guerra', 
+        photo:'diosdelaguerra', 
         text:'eralo que me faltaba para que mi cuarto fuera todo de dios de la guerra, muy elegante'
     }, ]

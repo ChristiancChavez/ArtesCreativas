@@ -2,17 +2,13 @@ import React from 'react';
 import Opinion from './Opinion/opinion';
 import Sales from './Sales/sales';
 import Social from '../../Social/social';
-
 import styles from './optionsNav.module.scss';
 
-
-const optionsNav = () => (
+const optionsNav = ({ view }) => (
     <div className={styles.optionsNav}>
-    <div className={styles.main}>
-        <Opinion />
-        <Sales />
+        <Opinion view={view} />
+        <Sales view={view} />
         <Social />
-    </div>
     </div>
 )
 export default optionsNav;

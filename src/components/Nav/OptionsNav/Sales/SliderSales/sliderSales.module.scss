@@ -1,0 +1,30 @@
+.sales {
+    background: white;
+    border-radius: 4px;
+    margin-top: 3.5%;
+    position: relative;
+    padding-bottom: 3%;
+}
+.name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #F05742;
+    
+}
+.img {
+    width: 78%;
+    height: 150px;
+    border-radius: 4px;
+}
+.price {
+    font-size: 12px;
+    font-style: italic;
+    color: black;
+    padding: 5px;
+    background: white;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0%;
+    right: 40%;
+    border: 1px solid white;
+}

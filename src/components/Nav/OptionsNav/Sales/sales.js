@@ -1,21 +1,19 @@
 import React from 'react';
 import { requestSales } from '../../../../Helpers/requestSales';
+import Arrows from '../../../Shared/Arrows/arrow';
+import SliderSales from './SliderSales/sliderSales';
 import styles from './sales.module.scss';
 
-const sales = () =>  {
+const sales = ({ view }) =>  {
     const renderSales = requestSales.map(sale => 
-        <div className={styles.sales}>
-            <h1 className={styles.name}>{sale.title}</h1>
-            <img className={styles.img} src={require(`../../../../assets/images/${sale.image}.jpg`)} alt={sale.image} />
-            <span className={styles.price}>${sale.price}</span>
-        </div>
-
+        <SliderSales sale={sale} />
     )
     return (
         <div className={styles.background}>
             <span className={styles.title}>Nuestras Promociones</span>
             <span className={styles.line}></span>
-            {renderSales[0]}
+            {renderSales[view]}
+            <Arrows request={requestSales}  />
         </div>
     )
 }

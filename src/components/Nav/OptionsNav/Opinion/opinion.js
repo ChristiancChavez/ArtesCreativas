@@ -1,25 +1,23 @@
 import React from 'react';
-import { requestOpinionCustomer } from '../../../../Helpers/requestOpinionCustomers';
-import arbol from '../../../../assets/images/purpleTree.jpg';
 import close from '../../../../assets/images/close.png';
+import SliderOpinion from './SliderOpinion/sliderOpinion';
+import { requestOpinionCustomer } from '../../../../Helpers/requestOpinionCustomers';
+import Arrows from '../../../Shared/Arrows/arrow';
 import styles from './opinion.module.scss';
 
-const opinion = () => {
-    const opinions = requestOpinionCustomer.map(item =>
-        <div className={styles.item}>
-            <h2 className={styles.text}>{item.user}</h2>
-            <span className={styles.text}>{item.product}</span>
-            <img className={styles.image} src={arbol} alt="perro" />
-            <p className={styles.description}>"{item.text}"</p>
-        </div>
+const opinion = ({ view }) => {
+    const renderOpinion = requestOpinionCustomer.map(item => 
+        <SliderOpinion item={item} />
     )
     return (
         <div className={styles.opinion}>
             <img className={styles.close} src={close} alt="close"/>
             <span className={styles.title}>¡Que dicen nuestros clientes!</span>
             <span className={styles.line}></span>
-            {opinions[0]}
+            {renderOpinion[view]}
+            <Arrows request={requestOpinionCustomer} />
         </div>
-    )
+        )
 }
+
 export default opinion;
