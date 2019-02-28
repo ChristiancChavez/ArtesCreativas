@@ -4,6 +4,7 @@ import Categories from './components/Categories/categories';
 import AboutUs from './components/AboutUs/aboutUs';
 import Social from './components/Social/social';
 import OptionsNav from './components/Nav/OptionsNav/optionsNav';
+import Galery from './components/Shared/Galery/galery';
 import styles from './app.module.scss';
 
 class App extends Component {
@@ -15,12 +16,12 @@ class App extends Component {
     const { socialIconApp, view } = this.state;
     return (
       <div className={styles.app}>
-      <OptionsNav view={view} />
+        {/* <OptionsNav view={view} />
         <Header />
         <Categories />
         <AboutUs />
-        <Social socialIconApp={socialIconApp} />
-        
+        <Social socialIconApp={socialIconApp} /> */}
+        <Galery />
       </div>
     );
   }
