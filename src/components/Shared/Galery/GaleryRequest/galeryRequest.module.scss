@@ -1,0 +1,32 @@
+.request {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: black;
+    z-index: 4;
+    position: relative;
+    padding:  4%  2% 2% 2%;
+}
+.content {
+    display: grid;
+    position: relative;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+}
+.img {
+    width: 100px;
+    height: 70px;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+.code {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+}
+.close {
+    width: 15px;
+    grid-column: span 2;
+    padding-left: 50%;
+    margin-bottom: 10%;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import close from '../../../assets/images/closegalery.png';
+import GaleryRequest from './GaleryRequest/galeryRequest';
 import styles from './galery.module.scss';
 
 const galery = () => (
@@ -17,6 +18,7 @@ const galery = () => (
             <h4 className={styles.galeryTitle}>Pop Art</h4>
             <h4 className={styles.galeryTitle}>Deportes</h4>
             <h4 className={styles.galeryTitle}>Autos y Motos</h4>
+            <GaleryRequest />
         </main>
     </div>
 )

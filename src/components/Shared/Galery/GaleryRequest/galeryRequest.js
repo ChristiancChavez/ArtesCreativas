@@ -1,75 +1,20 @@
 import React from 'react';
-import close from '../../../assets/images/closegalery.png';
-import perro from '../../../assets/images/canvas.jpg';
+import close from '../../../../assets/images/closegalery.png';
+import { requestGaleryCities } from '../../../../Helpers/requestGaleryCities';
 import styles from './galeryRequest.module.scss';
 
-const galeryRequest = () => (
-    <main>
-        <img className={styles.img} src={close} alt=''/>
-        <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-            <div className={styles.content}>
-                <img className={styles.img} src={perro} alt=''/>
-                <span className={styles.code}>001</span>
-            </div>
-    </main>
-)
+const galeryRequest = () => {
+    const requestImages = requestGaleryCities.map(city =>{
+        return  <div className={styles.content}>
+                    <img className={styles.img} src={require(`../../../../assets/images/cities/${city.city}.jpg`)} alt={city.city} />
+                    <span className={styles.code}>{city.city}</span>
+                </div>
+    })
+    return (
+        <main className={styles.request}>
+            <img className={styles.close} src={close} alt='close'/>
+            {requestImages}
+        </main>
+    )
+}
 export default galeryRequest;
