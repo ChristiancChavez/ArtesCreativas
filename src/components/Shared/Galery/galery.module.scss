@@ -6,6 +6,7 @@
     display: grid;
     grid-template-rows: 15% 2fr;
     padding: 6% 4% 0% 4%;
+     position: relative;
 }
 .header {
     display: grid;
@@ -20,26 +21,16 @@
     color: white;
 }
 .headerClose {
-    width: 20px;
+    width: 8%;
     justify-self: center;
     grid-row: 1/2;
+    cursor: pointer;
 }
 .galery {
     margin-top: 2%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 10%;
+    grid-auto-rows: 11%;
     align-items: center;
-}
-.galeryTitle {
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    margin: 0%;
-    color: #F05742;
-    cursor: pointer;
-    text-decoration: underline;
-}
-.galeryTitle:hover{
-    color: white;
+   
 }

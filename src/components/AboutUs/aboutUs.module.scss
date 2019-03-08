@@ -4,7 +4,7 @@
     flex-direction: column;
     padding: 0% 6%;
     align-items: center;
-    margin: 8% 0%;
+    margin: 5% 0%;
 }
 .aboutTitle {
     color: #F05742;
@@ -12,11 +12,17 @@
     font-style: italic;
     font-weight: 800;
     text-align: center;
+    border-right: 2px solid #F05742;
+    border-left: 2px solid #F05742;
+    border-radius: 4px;
+    padding: 1% 0%;
+    margin-bottom: 0;
+    // background: rgba(0, 0, 0, 0.349);
 }
 .aboutText {
     color: black;
     font-size: 14px;
-    text-align: justify;
+    text-align: center;
     font-weight: bold;
     margin-bottom: 15%;
 }

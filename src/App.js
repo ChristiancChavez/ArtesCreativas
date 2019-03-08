@@ -11,17 +11,53 @@ class App extends Component {
   state = {
     socialIconApp : 'socialIconApp',
     view: 0,
+    requestGaleryCities: 'requestGaleryCities',
+    renderRequestGalery: false,
+    expandImage: false,
   }
+
+  showRequestGalery = () => {
+    this.setState({
+      renderRequestGalery: true,
+    })
+  };
+
+  handleCloseGaleryShowed = () => {
+    this.setState({
+      renderRequestGalery: false
+    })
+  }
+
+  expandImageGalery = () => {
+    this.setState({
+      expandImage:  true,
+    })
+  }
+
+  handleCloseImageShowed = () =>{
+    this.setState({
+      expandImage:  false,
+    })
+  }
+
   render() {
-    const { socialIconApp, view } = this.state;
+    const { socialIconApp, view, requestGaleryCities, renderRequestGalery, expandImage } = this.state;
     return (
       <div className={styles.app}>
-        {/* <OptionsNav view={view} />
+        {/* <OptionsNav view={view} /> */}
         <Header />
         <Categories />
         <AboutUs />
-        <Social socialIconApp={socialIconApp} /> */}
-        <Galery />
+        <Social socialIconApp={socialIconApp} />
+        {/* <Galery 
+          showRequestGalery={this.showRequestGalery} 
+          renderRequestGalery={renderRequestGalery} 
+          requestGaleryCities={requestGaleryCities} 
+          handleCloseGaleryShowed={this.handleCloseGaleryShowed}
+          expandImageGalery={this.expandImageGalery}
+          expandImage={expandImage}
+          handleCloseImageShowed={this.handleCloseImageShowed}
+        /> */}
       </div>
     );
   }

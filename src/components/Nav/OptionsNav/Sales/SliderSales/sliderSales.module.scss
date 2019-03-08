@@ -1,5 +1,5 @@
 .sales {
-    background: white;
+    background: rgba(255, 255, 255, 0.712);
     border-radius: 4px;
     margin-top: 3.5%;
     position: relative;
@@ -13,8 +13,10 @@
 }
 .img {
     width: 78%;
-    height: 150px;
+    height: 120px;
     border-radius: 4px;
+    border-right: 2px solid #F05742;
+    border-left: 2px solid #F05742;
 }
 .price {
     font-size: 12px;

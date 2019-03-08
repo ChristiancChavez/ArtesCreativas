@@ -1,0 +1,15 @@
+.galeryTitle {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 0%;
+    color: #F05742;
+    cursor: pointer;
+}
+.galeryTitle:hover{
+    color: white;
+    border-right: 2px solid #F05742;
+    border-left: 2px solid #F05742;
+    background: rgba(0, 0, 0, 0.349);
+    border-radius: 4px;
+}
