@@ -3,7 +3,6 @@
     flex-flow: row nowrap;
     justify-content: center;
     align-items: center;
-    padding-top: 5%;
 }
 
 .socialIcon {
@@ -11,6 +10,7 @@
     filter: grayscale(100%);
     cursor: pointer;
     margin: 0% 30px;
+    transition: 1s;
 }
 .socialIcon:hover {
     filter: grayscale(0%);
@@ -19,6 +19,6 @@
 .socialIconApp {
     width: 30px;
     cursor: pointer;
-    margin: 0% 30px;
+    margin: 3% 30px 6% 30px;
     filter: grayscale(0%);
 }

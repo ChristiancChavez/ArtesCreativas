@@ -10,7 +10,6 @@ import styles from './app.module.scss';
 class App extends Component {
   state = {
     socialIconApp : 'socialIconApp',
-    view: 0,
     requestGaleryCities: 'requestGaleryCities',
     renderRequestGalery: false,
     expandImage: false,
@@ -34,21 +33,23 @@ class App extends Component {
     })
   }
 
-  handleCloseImageShowed = () =>{
+  handleCloseImageShowed = () => {
     this.setState({
       expandImage:  false,
     })
   }
 
+  
+
   render() {
-    const { socialIconApp, view, requestGaleryCities, renderRequestGalery, expandImage } = this.state;
+    const { socialIconApp, requestGaleryCities, renderRequestGalery, expandImage } = this.state;
     return (
       <div className={styles.app}>
-        {/* <OptionsNav view={view} /> */}
-        <Header />
+        <OptionsNav />
+        {/* <Header />
         <Categories />
         <AboutUs />
-        <Social socialIconApp={socialIconApp} />
+        <Social socialIconApp={socialIconApp} /> */}
         {/* <Galery 
           showRequestGalery={this.showRequestGalery} 
           renderRequestGalery={renderRequestGalery} 

@@ -1,10 +1,11 @@
 .optionsNav {
-    padding: 6%;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    background: rgba(240, 86, 66, 0.986);
+    padding: 4%;
+    display: grid;
+    grid-template-rows: 7% 46% 46%;
+    justify-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../../../assets/images/back1.jpg');
     z-index: 2;
     left: 0;
     top: 0;
@@ -12,3 +13,11 @@
     text-align: center;
     height: 100vh;
 }
+.close {
+    width: 5%;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 50px;
+}
+

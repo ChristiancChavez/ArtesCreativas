@@ -1,0 +1,93 @@
+.item {
+    background: transparent;
+    display: grid;
+    grid-template-rows: 9% 3% 80%;
+    justify-items: center;
+    
+}
+.itemTitle {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    width: 90%;
+}
+.itemTitle:hover {
+    color: white;
+    border-right: 2px solid #F05742;
+    border-left: 2px solid #F05742;
+    background: rgba(0, 0, 0, 0.493);
+    border-radius: 4px;
+}
+.itemLine {
+    width: 60px;
+    height: 1px;
+    background: black;
+}
+
+.dropDown {
+    display: grid;
+    grid-template-rows: 10% 9% 58% 22%;
+    background: rgba(255, 255, 255, 0.637);
+    border-radius: 4px;
+    padding: 1%;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    border-left: 2px solid #F05742;
+    border-right: 2px solid #F05742;
+}
+.title {
+    font-size: 12px;
+    font-weight: bold;
+    color: #F05742;
+}
+.text {
+    font-size: 11px;
+    color: black;
+}
+.photo {
+    width: 74%;
+    height: 130px;
+    border-radius: 4px;
+    border-right: 2px solid #F05742;
+    border-left: 2px solid #F05742;
+    align-self: center;
+}
+.description {
+    font-size: 11px;
+    font-style: italic;
+    color: black;
+    border-radius: 4px;
+    font-weight: bold;
+    padding: 1% 0%;
+}
+.arrows {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    position: absolute;
+    width: 95%;
+    left: 2.5%;
+    bottom: 45%;
+}
+.arrow {
+    background-image: url('../../assets/images/left.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    padding: 1.5%;
+    cursor: pointer;
+}
+.arrowRight {
+    background-image: url('../../assets/images/right.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    padding: 1.5%;
+    cursor: pointer;
+}

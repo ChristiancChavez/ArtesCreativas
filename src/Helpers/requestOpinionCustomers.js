@@ -2,24 +2,28 @@ export const requestOpinionCustomer = [
     {
         user:'Christian', 
         product:'Cuadro en vidrio', 
-        photo:'madridcity', 
-        text:'Un cuadro con mucho estilo y le da a mi habitación ese color y elegancia que queria, muchas gracias AC'
+        url:'madridcity.jpg', 
+        title:'Madrid',
+        description:'Un cuadro con mucho estilo y le da a mi habitación ese color y elegancia que queria, muchas gracias AC'
     },
     {
         user:'Andrea', 
         product:'Cuadro en Lienzo', 
-        photo:'VirgendeGuadalupe', 
-        text:'muy bonito, la virgen se ve muy nitida y de buena calidad'
+        url:'VirgendeGuadalupe.jpg', 
+        title:'Virgen Guadalupe',
+        description:'muy bonito, la virgen se ve muy nitida y de buena calidad'
     },
     {
         user:'Maryory', 
         product:'Jarron', 
-        photo:'jarronrojo', 
-        text:'lo puse en la sala con esas flores que me dieron y quedo demasiado hermoso'
+        url:'jarronrojo.jpg', 
+        title:'Jarron Rojo',
+        description:'lo puse en la sala con esas flores que me dieron y quedo demasiado hermoso'
     },
     {
         user:'Juan Felipe', 
         product:'Cuadro en vidrio personalizado', 
-        photo:'diosdelaguerra', 
-        text:'eralo que me faltaba para que mi cuarto fuera todo de dios de la guerra, muy elegante'
+        url:'diosdelaguerra.jpg', 
+        title:'Dios de la Guerra',
+        description:'era lo que me faltaba para que mi cuarto fuera todo de dios de la guerra, muy elegante'
     }, ]

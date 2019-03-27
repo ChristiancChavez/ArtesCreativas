@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    padding: 0% 6%;
+    padding: 2% 6% 0% 6%;
     align-items: center;
-    margin: 5% 0%;
+    margin: 0%;
 }
 .aboutTitle {
     color: #F05742;
@@ -16,7 +16,7 @@
     border-left: 2px solid #F05742;
     border-radius: 4px;
     padding: 1% 0%;
-    margin-bottom: 0;
+    margin: 3% 0%;
     // background: rgba(0, 0, 0, 0.349);
 }
 .aboutText {
@@ -24,7 +24,7 @@
     font-size: 14px;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 15%;
+    margin-bottom: 3%;
 }
 .aboutAdverstisement {
     text-align: center;
