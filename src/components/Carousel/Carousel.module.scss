@@ -1,29 +1,28 @@
 .item {
     background: transparent;
     display: grid;
-    grid-template-rows: 9% 3% 80%;
+    grid-template-rows: 8% 80%;
+    grid-row-gap: 3%;
     justify-items: center;
     
 }
 .itemTitle {
-    color: black;
-    font-weight: bold;
-    font-size: 16px;
-    cursor: pointer;
-    width: 90%;
-}
-.itemTitle:hover {
     color: white;
     border-right: 2px solid #F05742;
     border-left: 2px solid #F05742;
     background: rgba(0, 0, 0, 0.493);
     border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    width: 70%;
 }
-.itemLine {
-    width: 60px;
-    height: 1px;
-    background: black;
-}
+// .itemTitle:hover {
+//     color: white;
+//     border-right: 2px solid #F05742;
+//     border-left: 2px solid #F05742;
+//     background: rgba(0, 0, 0, 0.493);
+//     border-radius: 4px;
+// }
 
 .dropDown {
     display: grid;
@@ -41,6 +40,7 @@
     font-size: 12px;
     font-weight: bold;
     color: #F05742;
+    margin: 0;
 }
 .text {
     font-size: 11px;

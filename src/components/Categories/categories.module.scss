@@ -6,7 +6,7 @@
     padding: 12% 6% 0% 6%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../../assets/images/back1.jpg');
+    background-image: url('../../assets/images/back5.jpg');
 }
 
 .category {
@@ -14,16 +14,16 @@
     margin-bottom: 25%;
 }
 .image {
-    width: 220px;
-    height: 290px;
+    width: 200px;
+    height: 255px;
     border-radius: 4px;
 }
 
 .label {
     position: absolute;
     bottom: -5%;
-    right: 13%;
-    width: 160px;
+    left: 4%;
+    width: 180px;
     padding: 4% 0%;
     background: rgb(240, 86, 66);
     color: white;
@@ -34,7 +34,7 @@
     border-right: 2px solid white;
     border-left: 2px solid white;
     transition: 1s;
-    
+    font-size: 1em;
 }
 .label:hover {
     background: white;

@@ -13,6 +13,8 @@ class App extends Component {
     requestGaleryCities: 'requestGaleryCities',
     renderRequestGalery: false,
     expandImage: false,
+    openOptionsNav: false,
+    openGalery: false,
   }
 
   showRequestGalery = () => {
@@ -39,18 +41,41 @@ class App extends Component {
     })
   }
 
+  handleOpenOptionsNav = () => {
+    this.setState({
+      openOptionsNav:  true,
+    })
+  }
+  handleCloseOptionsNav = () => {
+    this.setState({
+      openOptionsNav: false,
+    })
+  }
+
+  handleOpenGalery = () => {
+    this.setState({
+      openGalery:  true,
+    })
+  }
+  handleCloseGalery = () => {
+    this.setState({
+      openGalery: false,
+    })
+  }
+
   
 
   render() {
-    const { socialIconApp, requestGaleryCities, renderRequestGalery, expandImage } = this.state;
+    const { socialIconApp, requestGaleryCities, renderRequestGalery, expandImage, openOptionsNav, openGalery } = this.state;
     return (
       <div className={styles.app}>
-        <OptionsNav />
-        {/* <Header />
-        <Categories />
+        { openOptionsNav && <OptionsNav handleCloseOptionsNav={this.handleCloseOptionsNav} />}
+        <Header handleOpenOptionsNav={this.handleOpenOptionsNav} />
+        <Categories handleOpenGalery={this.handleOpenGalery} />
         <AboutUs />
-        <Social socialIconApp={socialIconApp} /> */}
-        {/* <Galery 
+        <Social socialIconApp={socialIconApp} />
+        { openGalery && <Galery 
+          handleCloseGalery={this.handleCloseGalery}
           showRequestGalery={this.showRequestGalery} 
           renderRequestGalery={renderRequestGalery} 
           requestGaleryCities={requestGaleryCities} 
@@ -58,7 +83,8 @@ class App extends Component {
           expandImageGalery={this.expandImageGalery}
           expandImage={expandImage}
           handleCloseImageShowed={this.handleCloseImageShowed}
-        /> */}
+          handleOpenOptionsNav={this.handleOpenOptionsNav}
+        />}
       </div>
     );
   }

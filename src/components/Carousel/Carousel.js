@@ -10,8 +10,8 @@ class Carousel extends Component {
 
     moveRight = () => {
         const { position } = this.state;
-        const { item } = this.props;
-        if(position === item.length){
+        const { items } = this.props;
+        if(position === items.length){
             this.setState({
                 position: 0,
             })
@@ -24,10 +24,10 @@ class Carousel extends Component {
     
     moveLeft = () => {
         const { position } = this.state;
-        const { item } = this.props;
+        const { items } = this.props;
         if(position === 0){
             this.setState({
-                position : item.length - 1,
+                position : items.length - 1,
             })
         } else {
             this.setState({
@@ -37,12 +37,11 @@ class Carousel extends Component {
     };
 
     render(){
-        const { items } = this.props;
+        const { items, titleCarousel } = this.props;
         const { position } = this.state;
         return (
             <div className={styles.item}>
-                <span className={styles.itemTitle}>¡Que dicen nuestros clientes!</span>
-                <span className={styles.itemLine}></span>
+                <span className={styles.itemTitle}>{titleCarousel}</span>
                 <div className={styles.dropDown}>
                     <h1 className={styles.title}>{items[position].title}</h1>
                     <span className={styles.text}>{items[position].product}</span>

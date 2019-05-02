@@ -4,12 +4,15 @@ import { requestOpinionCustomer } from '../../../Helpers/requestOpinionCustomers
 import { requestSales } from '../../../Helpers/requestSales';
 import close from '../../../assets/images/close.png';
 import styles from './optionsNav.module.scss';
+const titleOpinion = "¡Que dicen nuestros clientes!";
+const titleSales = "¡Promociones para ti!";
 
-const optionsNav = () => (
+const optionsNav = ({ handleCloseOptionsNav }) => (
+    
     <div className={styles.optionsNav}>
-        <img className={styles.close} src={close} alt="close"/> 
-        <Carousel items={requestOpinionCustomer}  />
-        <Carousel items={requestSales} /> 
+        <img role="button" className={styles.close} src={close} alt="close" onClick={handleCloseOptionsNav} /> 
+        <Carousel items={requestOpinionCustomer}  titleCarousel={titleOpinion} />
+        <Carousel items={requestSales} titleCarousel={titleSales} /> 
     </div>
 )
 export default optionsNav;

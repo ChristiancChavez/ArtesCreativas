@@ -4,9 +4,9 @@ import Brand from '../Brand/brand';
 import Social from '../Social/social';
 import styles from './header.module.scss';
 
-const header = () => (
+const header = ({ handleOpenOptionsNav }) => (
     <div className={styles.header}>
-        <Nav />
+        <Nav handleOpenOptionsNav={handleOpenOptionsNav} />
         <Brand />
         <Social />
     </div>

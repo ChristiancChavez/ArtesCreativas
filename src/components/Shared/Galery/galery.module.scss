@@ -4,13 +4,22 @@
     background-size: cover;
     height: 100vh;
     display: grid;
-    grid-template-rows: 15% 2fr;
+    grid-template-rows: 15% 15% 2fr;
     padding: 6% 4% 0% 4%;
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .header {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .headerTitle {
     font-size: 20px;
@@ -22,8 +31,6 @@
 }
 .headerClose {
     width: 8%;
-    justify-self: center;
-    grid-row: 1/2;
     cursor: pointer;
 }
 .galery {
