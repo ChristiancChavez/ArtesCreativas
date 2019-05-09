@@ -8,21 +8,14 @@
 }
 .itemTitle {
     color: white;
-    border-right: 2px solid #F05742;
-    border-left: 2px solid #F05742;
+    border-right: 2px solid rgb(253, 95, 4);
+    border-left: 2px solid rgb(253, 95, 4);
     background: rgba(0, 0, 0, 0.493);
     border-radius: 4px;
     font-weight: bold;
     font-size: 16px;
-    width: 70%;
+    width: 75%;
 }
-// .itemTitle:hover {
-//     color: white;
-//     border-right: 2px solid #F05742;
-//     border-left: 2px solid #F05742;
-//     background: rgba(0, 0, 0, 0.493);
-//     border-radius: 4px;
-// }
 
 .dropDown {
     display: grid;
@@ -33,13 +26,13 @@
     justify-items: center;
     align-items: center;
     position: relative;
-    border-left: 2px solid #F05742;
-    border-right: 2px solid #F05742;
+    border-left: 2px solid rgb(253, 95, 4);
+    border-right: 2px solid rgb(253, 95, 4);
 }
 .title {
     font-size: 12px;
     font-weight: bold;
-    color: #F05742;
+    color: rgb(253, 95, 4);
     margin: 0;
 }
 .text {
@@ -50,8 +43,8 @@
     width: 74%;
     height: 130px;
     border-radius: 4px;
-    border-right: 2px solid #F05742;
-    border-left: 2px solid #F05742;
+    border-right: 2px solid rgb(253, 95, 4);
+    border-left: 2px solid rgb(253, 95, 4);
     align-self: center;
 }
 .description {

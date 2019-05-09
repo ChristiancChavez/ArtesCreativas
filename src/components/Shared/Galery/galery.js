@@ -28,7 +28,9 @@ const galery = (
             <img role="button" className={styles.headerClose} src={close} onClick={handleCloseGalery} alt='close'/>
             <Brand 
                 brandNavigation='brandNavigation' 
-                logoNavigation='logoNavigation' 
+                logoNavigation='logoNavigation'
+                titleNavigation= 'titleNavigation'
+                 
             />
             <Nav handleOpenOptionsNav={handleOpenOptionsNav} />
         </div>

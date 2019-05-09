@@ -6,7 +6,7 @@
     padding: 12% 6% 0% 6%;
     background-size: cover;
     background-repeat: no-repeat;
-    background-image: url('../../assets/images/back5.jpg');
+    background-image: url('../../assets/images/back4.jpg');
 }
 
 .category {
@@ -25,20 +25,20 @@
     left: 4%;
     width: 180px;
     padding: 4% 0%;
-    background: rgb(240, 86, 66);
-    color: white;
+    background: white;
+    color: rgb(253, 95, 4);
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
-    border-right: 2px solid white;
-    border-left: 2px solid white;
-    transition: 1s;
+    border-right: 3px solid rgb(253, 95, 4);
+    border-left: 3px solid rgb(253, 95, 4);
+    transition: 1.5s ease;
     font-size: 1em;
 }
 .label:hover {
-    background: white;
-    color: rgb(240, 86, 66);
-    border-right: 2px solid #F05742;
-    border-left: 2px solid #F05742;
+    background: rgb(65, 65, 63);
+    color: rgb(253, 174, 4);
+    border-right: 3px solid rgb(253, 174, 4);
+    border-left: 3px solid rgb(253, 174, 4);
 }

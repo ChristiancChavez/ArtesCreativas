@@ -12,5 +12,6 @@ export const requestCategories = [
     {image:'maravillas', label:'Maravillas del Mundo' },
     {image:'sea', label:'Paisajes' },
     {image:'popart', label:'Arte Pop' },
-    {image:'games', label:'Video Games' }
+    {image:'games', label:'Video Games' },
+    {image:'games', label:'Obras de Arte' }
 ];

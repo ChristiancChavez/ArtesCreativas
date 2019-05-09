@@ -15,6 +15,7 @@ class App extends Component {
     expandImage: false,
     openOptionsNav: false,
     openGalery: false,
+    selectedCategory:'',
   }
 
   showRequestGalery = () => {
@@ -52,9 +53,11 @@ class App extends Component {
     })
   }
 
-  handleOpenGalery = () => {
+  handleOpenGalery = (clickedCategory) => {
     this.setState({
       openGalery:  true,
+      selectedCategory: clickedCategory,
+
     })
   }
   handleCloseGalery = () => {
