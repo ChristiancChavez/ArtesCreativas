@@ -1,0 +1,17 @@
+export const requestSubcategories = [
+    ['América del Sur', 'América del Norte', 'Asia', 'Europa','Oceania'],
+    ['Game of Thrones', 'Simpsons', 'Harry Potter', 'Senor de los Anillos', 'Walking Dead'],
+    ['Dragón Ball Z', 'Naruto', 'Caballeros del Zodiaco','Looney Tunes', 'Mickey & Minnie', 'Pokemon', 'Yu-Gi-Oh','Death Note'],
+    ['Músicos', 'Atletas', 'Inspiradores'],
+    ['DC Comics', 'Marvel'],
+    ['Mandala', 'Katrina', 'Ying Ynag', 'Pez Koi', 'Buda', 'Zen'],
+    ['Felinos Salvajes', 'Aves', 'Perros', 'Gatos', 'Caballos', 'Acuaticos', 'Selvaticos'],
+    ['Carros', 'Motos'],
+    ['Fútbol', 'Basquetball', 'Ciclismo'],
+    ['Abstractos', 'Psicodelicos', 'Astronautas y Seres', 'Planetas y Lunas', 'Humanos y mas'],
+    ['Piramides', 'Puentes y Puertos', 'Museos', 'Torres', 'Maravillas Modernas', 'Esculturas'],
+    ['Atardeceres', 'Flores y Bosques', 'Montañas y Lagos', 'Oceanos y Playas', 'Auroras y Estrellas'],
+    ['Marilyn Monroe', 'Vintage'],
+    ['God of War', 'Fifa 19', 'Fortnite', 'Mario Bros', 'Halo', 'Jump Force', 'Mortal Combat'],
+    ['Leonardo Da Vinci', 'Fernando Botero', 'Miguel Angel', 'Vincent Van Gogh', '‎Salvador Dalí', '‎Rembrandt', '‎Sandro Botticelli'],
+]

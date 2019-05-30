@@ -15,7 +15,7 @@ class App extends Component {
     expandImage: false,
     openOptionsNav: false,
     openGalery: false,
-    selectedCategory:'',
+    selectedCategory: 0,
   }
 
   showRequestGalery = () => {
@@ -57,7 +57,6 @@ class App extends Component {
     this.setState({
       openGalery:  true,
       selectedCategory: clickedCategory,
-
     })
   }
   handleCloseGalery = () => {
@@ -69,12 +68,12 @@ class App extends Component {
   
 
   render() {
-    const { socialIconApp, requestGaleryCities, renderRequestGalery, expandImage, openOptionsNav, openGalery } = this.state;
+    const { socialIconApp, requestGaleryCities, renderRequestGalery, expandImage, openOptionsNav, openGalery, selectedCategory } = this.state;
     return (
       <div className={styles.app}>
         { openOptionsNav && <OptionsNav handleCloseOptionsNav={this.handleCloseOptionsNav} />}
         <Header handleOpenOptionsNav={this.handleOpenOptionsNav} />
-        <Categories handleOpenGalery={this.handleOpenGalery} />
+        <Categories handleOpenGalery={this.handleOpenGalery}  />
         <AboutUs />
         <Social socialIconApp={socialIconApp} />
         { openGalery && <Galery 
@@ -87,6 +86,7 @@ class App extends Component {
           expandImage={expandImage}
           handleCloseImageShowed={this.handleCloseImageShowed}
           handleOpenOptionsNav={this.handleOpenOptionsNav}
+          selectedCategory={selectedCategory}
         />}
       </div>
     );

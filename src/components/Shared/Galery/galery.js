@@ -1,7 +1,7 @@
 import React from 'react';
 import close from '../../../assets/images/closegalery.png';
-import GaleryRequest from './GaleryRequest/galeryRequest';
-import { requestCategoriesGlassPicture } from '../../../Helpers/requestCategoriesGlassPicture';
+// import GaleryRequest from './GaleryRequest/galeryRequest';
+import { requestSubcategories } from '../../../Helpers/requestSubcategories';
 import CategoriesGalery from './CategoriesGalery/categoriesGalery';
 import Nav from '../../Nav/nav';
 import Brand from '../../Brand/brand';
@@ -16,11 +16,14 @@ const galery = (
         expandImage, 
         handleCloseImageShowed, 
         handleCloseGalery,
-        handleOpenOptionsNav
+        handleOpenOptionsNav,
+        selectedCategory 
         
     }) => {
-     const titlesCategories = requestCategoriesGlassPicture.map(category => {
-       return <CategoriesGalery category={category.name} showRequestGalery={showRequestGalery} />
+    const titlesSubcategories = requestSubcategories[selectedCategory].map(category => {
+        console.log(category);
+        return <CategoriesGalery category={category} showRequestGalery={showRequestGalery} key={category} />
+        
     })
     return (
     <div className={styles.background}>
@@ -38,14 +41,14 @@ const galery = (
             <h1 className={styles.headerTitle}>CIUDADES</h1>
         </div>
         <main className={styles.galery}>
-            {titlesCategories}
-            {renderRequestGalery && 
+            {titlesSubcategories}
+            {/* {renderRequestGalery && 
                 <GaleryRequest handleCloseGaleryShowed={handleCloseGaleryShowed}
                     expandImageGalery={expandImageGalery} 
                     expandImage={expandImage}
                     handleCloseImageShowed={handleCloseImageShowed}
                 /> 
-            }
+            } */}
         </main>
     </div>
     )
