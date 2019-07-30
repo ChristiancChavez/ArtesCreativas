@@ -2,28 +2,30 @@
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    padding: 2% 6% 0% 6%;
+    padding: 6% 6% 0 6%;
     align-items: center;
-    margin: 0%;
+    background: lightgray;
 }
 .aboutTitle {
     color: rgb(253, 95, 4);
-    font-size: 20px;
-    font-style: italic;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: 700;
     text-align: center;
     border-right: 2px solid rgb(253, 95, 4);
     border-left: 2px solid rgb(253, 95, 4);
     border-radius: 4px;
-    padding: 1% 0%;
-    margin: 3% 0%;
+    padding: 1% 0;
+    margin: 3% 1%;
+    font-family: 'Rancho', cursive;
 }
 .aboutText {
     color: black;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 3%;
+    margin: 3% 0 9% 0;
+    
+    font-family: 'Pompiere', cursive;
 }
 .aboutAdverstisement {
     text-align: center;

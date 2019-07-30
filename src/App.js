@@ -5,6 +5,7 @@ import AboutUs from './components/AboutUs/aboutUs';
 import Social from './components/Social/social';
 import OptionsNav from './components/Nav/OptionsNav/optionsNav';
 import Galery from './components/Shared/Galery/galery';
+import Products from './components/Nav/Products/products';
 import styles from './app.module.scss';
 
 class App extends Component {
@@ -71,11 +72,14 @@ class App extends Component {
     const { socialIconApp, requestGaleryCities, renderRequestGalery, expandImage, openOptionsNav, openGalery, selectedCategory } = this.state;
     return (
       <div className={styles.app}>
-        { openOptionsNav && <OptionsNav handleCloseOptionsNav={this.handleCloseOptionsNav} />}
-        <Header handleOpenOptionsNav={this.handleOpenOptionsNav} />
-        <Categories handleOpenGalery={this.handleOpenGalery}  />
-        <AboutUs />
-        <Social socialIconApp={socialIconApp} />
+        <section className={styles.background}>
+          { openOptionsNav && <OptionsNav handleCloseOptionsNav={this.handleCloseOptionsNav} />}
+          <Header handleOpenOptionsNav={this.handleOpenOptionsNav} />
+          <AboutUs />
+          <Social socialIconApp={socialIconApp} />
+          <Products />
+        </section>
+        {/* <Categories handleOpenGalery={this.handleOpenGalery}  />
         { openGalery && <Galery 
           handleCloseGalery={this.handleCloseGalery}
           showRequestGalery={this.showRequestGalery} 
@@ -87,7 +91,7 @@ class App extends Component {
           handleCloseImageShowed={this.handleCloseImageShowed}
           handleOpenOptionsNav={this.handleOpenOptionsNav}
           selectedCategory={selectedCategory}
-        />}
+        />} */}
       </div>
     );
   }

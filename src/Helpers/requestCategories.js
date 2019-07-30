@@ -8,7 +8,7 @@ export const requestCategories = [
     {image:'tiger', label:'Animales' },
     {image:'carro', label:'Carros y Motos' },
     {image:'deportes', label:'Deportes' },
-    {image:'interesantes', label:'Interesantes' },
+    {image:'interesantes', label:'Abstractos' },
     {image:'maravillas', label:'Maravillas del Mundo' },
     {image:'sea', label:'Paisajes' },
     {image:'popart', label:'Arte Pop' },

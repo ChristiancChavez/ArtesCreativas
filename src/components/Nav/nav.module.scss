@@ -7,14 +7,18 @@
 .line {
     width: 28px;
     height: 4px;
-    background: rgb(158, 156, 156);
+    background: black;
     margin: 2px 0px;
 }
 
-// .line:nth-child(2) {
-//     background-color: rgb(253, 95, 4);
-// }
+.line:nth-child(1):hover {
+    background-color: rgb(249, 253, 4);
+}
 
-// .line:nth-child(3) {
-//     background-color: rgb(81, 204, 118);
-// }
+.line:nth-child(2):hover {
+    background-color: rgb(253, 95, 4);
+}
+
+.line:nth-child(3):hover {
+    background-color: rgb(7, 214, 69);
+}

@@ -2,23 +2,23 @@
     display: flex;
     justify-content: center;
     position: relative;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 .brandNavigation {
     justify-content: center;
 }
 .brandTitle {
     font-family: 'Gugi', cursive;
-    color: white;
-    font-size: 15px;
-    position: absolute;
-    bottom: 15%;
-    left: 30.5%;
+    color: #080000;
+    font-size: 25px;
+    margin: 0 0 15px 0;
 }
 .brandLogo {
     width: 45%;
     height: 45%;
     border-radius: 4px;
-    margin: 20px;
+    margin: 25px 20px 0 20px;
 }
 .logoNavigation {
     width: 30%;

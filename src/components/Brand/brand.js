@@ -1,6 +1,6 @@
 import React from 'react';
 import Styles from'./brand.module.scss';
-import logo from '../../assets/images/logoAC.PNG';
+import logo from '../../assets/images/logo.png';
 
 const brand = ({ brandNavigation, logoNavigation, titleNavigation }) => (
     <div className={`${Styles.brand} ${Styles[brandNavigation]}`}>
