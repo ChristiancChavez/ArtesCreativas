@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './aboutUs.module.scss';
-const aboutUs = () => (
+import Social from '../Social/social';
+const aboutUs = ({socialIconApp}) => (
     <div className={styles.about}>
         <span className={styles.aboutTitle}>¿Como hacemos de tu espacio un Arte Creativa?</span>
         <span className={styles.aboutText}>¡Te brindamos productos que le agregan vida, aire fresco y ese estilo único que deseas a tus espacios 
@@ -8,6 +9,7 @@ const aboutUs = () => (
             seguimiento continuo de tu satisfacción!
         </span>
         <span className={styles.aboutTitle}>Contáctanos y recibe la mejor Asesoría</span>
+        <Social socialIconApp={socialIconApp} />
     </div>
 )
 export default aboutUs;

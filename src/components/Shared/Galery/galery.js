@@ -1,6 +1,6 @@
 import React from 'react';
 import close from '../../../assets/images/closegalery.png';
-// import GaleryRequest from './GaleryRequest/galeryRequest';
+import GaleryRequest from './GaleryRequest/galeryRequest';
 import { requestSubcategories } from '../../../Helpers/requestSubcategories';
 import CategoriesGalery from './CategoriesGalery/categoriesGalery';
 import Nav from '../../Nav/nav';
@@ -42,13 +42,13 @@ const galery = (
         </div>
         <main className={styles.galery}>
             {titlesSubcategories}
-            {/* {renderRequestGalery && 
+            {renderRequestGalery && 
                 <GaleryRequest handleCloseGaleryShowed={handleCloseGaleryShowed}
                     expandImageGalery={expandImageGalery} 
                     expandImage={expandImage}
                     handleCloseImageShowed={handleCloseImageShowed}
                 /> 
-            } */}
+            }
         </main>
     </div>
     )

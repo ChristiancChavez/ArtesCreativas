@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Header from './components/Header/header';
-import Categories from './components/Categories/categories';
+// import Categories from './components/Categories/categories';
 import AboutUs from './components/AboutUs/aboutUs';
 import Social from './components/Social/social';
 import OptionsNav from './components/Nav/OptionsNav/optionsNav';
-import Galery from './components/Shared/Galery/galery';
-import Products from './components/Nav/Products/products';
+// import Galery from './components/Shared/Galery/galery';
+import Products from './components/Products/products';
 import styles from './app.module.scss';
 
 class App extends Component {
@@ -75,11 +75,10 @@ class App extends Component {
         <section className={styles.background}>
           { openOptionsNav && <OptionsNav handleCloseOptionsNav={this.handleCloseOptionsNav} />}
           <Header handleOpenOptionsNav={this.handleOpenOptionsNav} />
-          <AboutUs />
-          <Social socialIconApp={socialIconApp} />
+          <AboutUs socialIconApp={socialIconApp}/>
           <Products />
         </section>
-        {/* <Categories handleOpenGalery={this.handleOpenGalery}  />
+         {/* <Categories handleOpenGalery={this.handleOpenGalery}  />
         { openGalery && <Galery 
           handleCloseGalery={this.handleCloseGalery}
           showRequestGalery={this.showRequestGalery} 
