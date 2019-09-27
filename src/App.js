@@ -2,10 +2,8 @@ import React, { Component } from 'react';
 import Header from './components/Header/header';
 // import Categories from './components/Categories/categories';
 import AboutUs from './components/AboutUs/aboutUs';
-import Social from './components/Social/social';
 import OptionsNav from './components/Nav/OptionsNav/optionsNav';
 // import Galery from './components/Shared/Galery/galery';
-import Products from './components/Products/products';
 import styles from './app.module.scss';
 
 class App extends Component {
@@ -76,7 +74,6 @@ class App extends Component {
           { openOptionsNav && <OptionsNav handleCloseOptionsNav={this.handleCloseOptionsNav} />}
           <Header handleOpenOptionsNav={this.handleOpenOptionsNav} />
           <AboutUs socialIconApp={socialIconApp}/>
-          <Products />
         </section>
          {/* <Categories handleOpenGalery={this.handleOpenGalery}  />
         { openGalery && <Galery 

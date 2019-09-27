@@ -4,6 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     display: grid;
+    width: 100%;
     grid-template-rows: repeat(5, 1fr);
     grid-row-gap: 5px;
     text-align: center;
@@ -27,10 +28,11 @@
     margin: 10px;
     cursor: pointer;
     transition: all 0.5s;
+    font-size: 25px;
 }
 .product:hover {
-    border-right: 2px solid rgb(253, 95, 4);
-    border-left: 2px solid rgb(253, 95, 4);
+    // border-right: 2px solid rgb(253, 95, 4);
+    // border-left: 2px solid rgb(253, 95, 4);
     border-radius: 4px;
     background: rgba(0, 0, 0, 0.349);
     color: rgb(253, 95, 4);
